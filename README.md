@@ -27,7 +27,8 @@ cambiaValor(&valor);
 int *param
 param = &valor
 
-struct
+# structs in swift
+
 1.- swift autoinicializa una struct
 2.- podemos decirle a una estructura que se inicialice
 3.- son tipos de datos que van por valor
@@ -50,17 +51,17 @@ struct
  
               }
 
-Class
+# Class
 1.- son tipos de datos por referencia.
 2.- herencia unica
-3.- en java la herencia multulple se esconde en .... interfaces.
+3.- en java la herencia multiple se esconde en .... interfaces.
 4.- optimizacion de memoria
 5.- sobre carga de método.
 
-tuplas
+# tuplas
 1.- son inmutables
 
-arrays
+# arrays
 1.- mismo tipo de datos
 
 arrays
@@ -68,7 +69,7 @@ arrays
 2.- son del mismo tipo
 3.- importa su orden.
 
-En swift todo es un objeto, en exception las tuplas que no son mutables.
+# En swift todo es un objeto, en exception las tuplas que no son mutables.
 
 diccionarios.
 
@@ -90,8 +91,11 @@ Norberto. Conoce varios lenguajes de programación. Compildores, memoria, sistem
 ========
 Marduk.fi@
 =========
+
 Ejercicio:
+
 empresa de seguros
+
 Alta de poliza de seguros, petición por sistema, se ha detectado que crece el riesgo, seguros para Uber 
 Detectar cuando se trata de un carro Uber o auto de lujo, clásico,
 Se ha hecho un análisis de marcado, peticiones , evaluar 9200 unidades al mes. 
@@ -175,13 +179,11 @@ preguntar diferencua entre version and build
 hector zarate, spotify
 
 =============
-Filosofia en swift
-
-Todos tienen propiedades y métodos, todos !!!
+# Filosofia en swift: Todos tienen propiedades y métodos, todos !!!
 
 enumerador, estrutcura o es un objeto ??? todo en swift
 
-a veces es un objeto puede ser muy complejo y es por eso que crea una estructura, es lo que debemos definir.
+# A veces es un objeto puede ser muy complejo y es por eso que crea una estructura, es lo que debemos definir.
 
 =============
 
@@ -215,7 +217,7 @@ bajar marzipan
 
 marzipan => LLVM ABI vs WINDOWS 
 
-* programacion oreintada a protocolos
+# programacion oreintada a protocolos
 
 GPA nueva manera de cuidar sus datos, 
 
@@ -240,7 +242,7 @@ Las variables estaticas estan en el heap.
 
 Creating Secure Applications.
 
-what is security ?
+# what is security ?
 CIA triad
 
 +-----------------+-----------+--------------+
@@ -251,14 +253,14 @@ CIA triad
 |                 |           | Availability |
 +-----------------+-----------+--------------+i
 
-Security Controls
+# Security Controls
 +----------------+----------------+
 | Identification | Authentication |
 +----------------+----------------+
 | Authorization  | Accountability |
 +----------------+----------------+
 
-Security Principles
+# Security Principles
 
 +-----------------+------------------+----------------------+
 | least Privilege |                  |                      |
@@ -268,7 +270,7 @@ Security Principles
 |                 |                  | Compartmentalization |
 +-----------------+------------------+----------------------+
 
-basics
+# basics
 
 +-------------------+--+--+
 | Steganography     |  |  |
@@ -311,7 +313,8 @@ Un sha-256 es lo mas recomendable.
 Simetric keys, inconveniente de transportar la llave.
 asymetric keys, mas lento para descigrar que AES. Existe otro que se llama curvas elipticas, tambien son asimetricas.
 
-Cryptosystema.
+# Cryptosystema.
+
 Certificados. Adentro vienen llaves publicas y privadas. Quien autentica que el certificsdo es valido, viene datos personales.
 
 Llaves o tokens
@@ -330,19 +333,14 @@ secure transport:
 
 Sanboxing
 
-
-
-
-
 application
-
 
 
 var clasifications: [Clasification]
 var items: [[Mark]]
 
 
-para guardar los modelos de valvulas usar el protocol NSCoding
+# para guardar los modelos de valvulas usar el protocol NSCoding
 
 
 norberto, 1993 al 1996, 
@@ -355,12 +353,12 @@ gitlab misaelpc
 como probar la aplicacion automaticamente ?
 
 
-prueba unitaria
-prueba de interface
+# prueba unitaria
+# prueba de interface
 validar de estilo swiftlint
 
 
-las pruebas unitarias van enfocadas al codigo, cada linea puede probarse.
+### las pruebas unitarias van enfocadas al codigo, cada linea puede probarse.
 las de interface puedes generarlas tu o lo puedes hacer junto con el equipo de testers.
 
 https://gitlab.com/misaelpc/bunsan_members
@@ -387,17 +385,14 @@ Treat: representa el flujo de ejecucion.
 
 stack trace: 
 
-Core fundation esta hecho en C
-UIKitCore esta hecho en objective-C
+# Core fundation esta hecho en C
+# UIKitCore esta hecho en objective-C
 
 Razon para no usar prints: se contamina la historia del repositorio con basura. Si insertamos 10 prints, hay diez cambios, y no podemos notar cual es el cambio.
 
 . Si insertamos 10 prints, hay diez cambios, y no podemos notar cual es el cambio.
-Usando breakpoints no tenemos que volver a compilar.
+# Usando breakpoints no tenemos que volver a compilar.
 Usando prints tenemos problemas de performance. 
-
-
-
 
 debugger: 
 
@@ -413,7 +408,8 @@ does not recognize object, no encuentra el metodo, por lo que no incluidomos el 
 o escribimos mal el nombre.
 
 
-CICLO DEL RUN LOOP
+# CICLO DEL RUN LOOP
+
 while () {
 revisarCola()
 rutearEvemto()
@@ -425,10 +421,7 @@ liberoLaBasuraMemoria()
 
 tambien pueden ver autorelease anidados, una vez que entra en uno, libera, pero no se entera el primer autorelease.
 
-
-
-
-Clase de Norberto.
+# Clase de Norberto.
 
 - integracion con Objective-C
 - debugger.
@@ -447,7 +440,7 @@ Clase de Norberto.
 Objective-C tenia algunas restircciones de aquellos años.
 Graydon escribio Rust, para reemplazar C y C++. Ahora entró a apple y trabaja en el equipo de Swift.
 
-- emuladores, simuladores. Diferencia entre ellos.
+# Emuladores, Simuladores. Diferencia entre ellos.
 
 - Compiladores:
 - LEXER, analizador lexico.
